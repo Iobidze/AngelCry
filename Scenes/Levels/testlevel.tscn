@@ -1,0 +1,132 @@
+[gd_scene format=4 uid="uid://cvn6coerma1xr"]
+
+[ext_resource type="PackedScene" uid="uid://cjixhxy705nie" path="res://Scenes/Units/Player/player.tscn" id="1_0bwfy"]
+[ext_resource type="Texture2D" uid="uid://rp8ibtwtiwwj" path="res://Scenes/Levels/floor.png" id="2_f7qcs"]
+[ext_resource type="Texture2D" uid="uid://dy7elwb3m1o8d" path="res://Scenes/Levels/floorw.png" id="3_t6lgn"]
+[ext_resource type="Texture2D" uid="uid://bhwn588j3d3xl" path="res://Scenes/Levels/wall.png" id="4_q4ml5"]
+[ext_resource type="PackedScene" uid="uid://unqe86xd0jyh" path="res://Scenes/Objects/Letter/letter.tscn" id="5_t6lgn"]
+[ext_resource type="PackedScene" uid="uid://dnbat3iqk2sqa" path="res://Scenes/Objects/Door/door.tscn" id="6_q4ml5"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_q4ml5"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5enqs"]
+texture = ExtResource("2_f7qcs")
+texture_region_size = Vector2i(512, 512)
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0yo3x"]
+texture = ExtResource("3_t6lgn")
+texture_region_size = Vector2i(512, 512)
+0:0/0 = 0
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_q4ml5"]
+vertices = PackedVector2Array(256, 256, -256, 256, -256, -256, 256, -256)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-256, -256, 256, -256, 256, 256, -256, 256)])
+agent_radius = 0.0
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_q4ml5"]
+polygon = PackedVector2Array(-256, -226, 256, -226, 256, 219.5, -256, 219.5)
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_5enqs"]
+vertices = PackedVector2Array(256, 256, -256, 256, -256, -256, 256, -256)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-256, -256, 256, -256, 256, 256, -256, 256)])
+agent_radius = 0.0
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_5enqs"]
+polygon = PackedVector2Array(-219.5, -256, 219.5, -256, 219.5, 256, -224.5, 256)
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_0yo3x"]
+vertices = PackedVector2Array(256, 256, -256, 256, -256, -256, 256, -256)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-256, -256, 256, -256, 256, 256, -256, 256)])
+agent_radius = 0.0
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_0yo3x"]
+polygon = PackedVector2Array(-214, -222.5, 215, -226, 215, 207, -208.5, 210.5)
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_s41oc"]
+vertices = PackedVector2Array(256, 256, -256, 256, -256, -256, 256, -256)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-256, -256, 256, -256, 256, 256, -256, 256)])
+agent_radius = 0.0
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_lgbju"]
+polygon = PackedVector2Array(-256, -223, 215, -226, 215, 207, -256, 211.5)
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_lgbju"]
+vertices = PackedVector2Array(256, 256, -256, 256, -256, -256, 256, -256)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-256, -256, 256, -256, 256, 256, -256, 256)])
+agent_radius = 0.0
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_bhumb"]
+polygon = PackedVector2Array(-219.5, -213.5, 256, -219.5, 256, 201, -219.5, 194.5)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s41oc"]
+texture = ExtResource("4_q4ml5")
+texture_region_size = Vector2i(512, 512)
+0:0/next_alternative_id = 5
+0:0/0 = 0
+0:0/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_q4ml5")
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-256, -256, 256, -256, 256, 256, -256, 256)
+0:0/0/physics_layer_0/polygon_1/points = PackedVector2Array(-256, -256, 256, -256, 256, 256, -256, 256)
+0:0/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_q4ml5")
+0:0/1 = 1
+0:0/1/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_5enqs")
+0:0/1/physics_layer_0/polygon_0/points = PackedVector2Array(-256, -256, 256, -256, 256, 256, -256, 256)
+0:0/1/physics_layer_0/polygon_1/points = PackedVector2Array(-256, -256, 256, -256, 256, 256, -256, 256)
+0:0/1/navigation_layer_0/polygon = SubResource("NavigationPolygon_5enqs")
+0:0/2 = 2
+0:0/2/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_0yo3x")
+0:0/2/physics_layer_0/polygon_0/points = PackedVector2Array(-256, -256, 256, -256, 256, 256, -256, 256)
+0:0/2/physics_layer_0/polygon_1/points = PackedVector2Array(-256, -256, 256, -256, 256, 256, -256, 256)
+0:0/2/navigation_layer_0/polygon = SubResource("NavigationPolygon_0yo3x")
+0:0/3 = 3
+0:0/3/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_lgbju")
+0:0/3/physics_layer_0/polygon_0/points = PackedVector2Array(-256, -256, 256, -256, 256, 256, -256, 256)
+0:0/3/physics_layer_0/polygon_1/points = PackedVector2Array(-256, -256, 256, -256, 256, 256, -256, 256)
+0:0/3/navigation_layer_0/polygon = SubResource("NavigationPolygon_s41oc")
+0:0/4 = 4
+0:0/4/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_bhumb")
+0:0/4/physics_layer_0/polygon_0/points = PackedVector2Array(-256, -256, 256, -256, 256, 256, -256, 256)
+0:0/4/physics_layer_0/polygon_1/points = PackedVector2Array(-256, -256, 256, -256, 256, 256, -256, 256)
+0:0/4/navigation_layer_0/polygon = SubResource("NavigationPolygon_lgbju")
+
+[sub_resource type="TileSet" id="TileSet_lgbju"]
+tile_size = Vector2i(512, 512)
+occlusion_layer_0/light_mask = 1
+physics_layer_0/collision_layer = 1
+physics_layer_0/physics_material = SubResource("PhysicsMaterial_q4ml5")
+navigation_layer_0/layers = 1
+sources/0 = SubResource("TileSetAtlasSource_5enqs")
+sources/1 = SubResource("TileSetAtlasSource_0yo3x")
+sources/2 = SubResource("TileSetAtlasSource_s41oc")
+
+[node name="Testlevel" type="Node2D" unique_id=1731160864]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1719687226]
+tile_map_data = PackedByteArray("AAD/////AAAAAAAAAAAAAP//AgAAAAAABAABAP//AgAAAAAAAwACAP//AQAAAAAAAAACAAAAAQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAAAAAAAAAAAAD//wEAAAAAAAAAAAAAAAEAAgAAAAAAAgABAAEAAAAAAAAAAAACAAEAAQAAAAAAAAADAAEAAQAAAAAAAAADAAAAAQAAAAAAAAADAP//AQAAAAAAAAAEAP//AAAAAAAAAAAEAAAAAQAAAAAAAAAEAAEAAQAAAAAAAAAEAAIAAAAAAAAAAAADAAIAAAAAAAAAAAACAAIAAAAAAAAAAAABAAIAAAAAAAAAAAAAAAIAAAAAAAAAAAD//wIAAAAAAAAAAAD+/wIAAAAAAAAAAAD+/wEAAAAAAAAAAAD+/wAAAAAAAAAAAAD+////AgAAAAAAAwD+//7/AAAAAAAAAAD///7/AAAAAAAAAAAAAP7/AAAAAAAAAAABAP7/AAAAAAAAAAACAP7/AAAAAAAAAAADAP7/AAAAAAAAAAAEAP7/AAAAAAAAAAAFAP7/AAAAAAAAAAAFAP//AAAAAAAAAAAFAAAAAAAAAAAAAAAFAAEAAAAAAAAAAAAFAAIAAAAAAAAAAAD9//7/AgAAAAAAAQD9////AgAAAAAAAQD9/wAAAgAAAAAAAQD9/wEAAgAAAAAAAQD9/wIAAgAAAAAAAQD9/wMAAgAAAAAAAAD+/wMAAgAAAAAAAAD//wMAAgAAAAAAAAAAAAMAAgAAAAAAAAABAAMAAgAAAAAAAAACAAMAAgAAAAAAAAADAAMAAgAAAAAAAAAEAAMAAgAAAAAAAAAFAAMAAgAAAAAAAAAGAAMAAgAAAAAAAAAGAAIAAgAAAAAAAQAGAAEAAgAAAAAAAQAGAAAAAgAAAAAAAQAGAP//AgAAAAAAAQAGAP7/AgAAAAAAAQAGAP3/AgAAAAAAAQAFAP3/AgAAAAAAAAAEAP3/AgAAAAAAAAADAP3/AgAAAAAAAAACAP3/AgAAAAAAAAABAP3/AgAAAAAAAAAAAP3/AgAAAAAAAAD///3/AgAAAAAAAAD+//3/AgAAAAAAAAD9//3/AgAAAAAAAQD8/wMAAgAAAAAAAAD8/wEAAgAAAAAAAAD8/wIAAgAAAAAAAAD7/wYAAgAAAAAAAAD6/wYAAgAAAAAAAAD5/wYAAgAAAAAAAAD4/wYAAgAAAAAAAAD4/wUAAgAAAAAAAAD4/wQAAgAAAAAAAAD4/wMAAgAAAAAAAAD4/wIAAgAAAAAAAAD4/wEAAgAAAAAAAAD4/wAAAgAAAAAAAAD4////AgAAAAAAAAD4//7/AgAAAAAAAAD4//3/AgAAAAAAAAD4//z/AgAAAAAAAAD4//v/AgAAAAAAAAD5//v/AgAAAAAAAAD6//v/AgAAAAAAAAD7//v/AgAAAAAAAAD8//v/AgAAAAAAAAD9//v/AgAAAAAAAAD+//v/AgAAAAAAAAD///v/AgAAAAAAAAAAAPv/AgAAAAAAAAABAPv/AgAAAAAAAAACAPv/AgAAAAAAAAADAPv/AgAAAAAAAAAEAPv/AgAAAAAAAAAFAPv/AgAAAAAAAAAGAPv/AgAAAAAAAAAHAPv/AgAAAAAAAAAIAPv/AgAAAAAAAAAJAPv/AgAAAAAAAAAJAPz/AgAAAAAAAAAJAP3/AgAAAAAAAAAJAP7/AgAAAAAAAAAJAP//AgAAAAAAAAAJAAAAAgAAAAAAAAAJAAEAAgAAAAAAAAAJAAIAAgAAAAAAAAAJAAMAAgAAAAAAAAAJAAQAAgAAAAAAAAAJAAUAAgAAAAAAAAAJAAYAAgAAAAAAAAAIAAYAAgAAAAAAAAAHAAYAAgAAAAAAAAAGAAYAAgAAAAAAAAAFAAYAAgAAAAAAAAAEAAYAAgAAAAAAAAADAAYAAgAAAAAAAAACAAYAAgAAAAAAAAABAAYAAgAAAAAAAAAAAAYAAgAAAAAAAAD//wYAAgAAAAAAAAD+/wYAAgAAAAAAAAD9/wYAAgAAAAAAAAD8/wYAAgAAAAAAAAD6/wUAAgAAAAAAAAD5/wUAAgAAAAAAAAD7/wUAAgAAAAAAAAD8/wUAAgAAAAAAAAD9/wUAAgAAAAAAAAD+/wUAAgAAAAAAAAD//wUAAgAAAAAAAAAAAAUAAgAAAAAAAAABAAUAAgAAAAAAAAACAAUAAgAAAAAAAAADAAUAAgAAAAAAAAAEAAUAAgAAAAAAAAAFAAUAAgAAAAAAAAAGAAUAAgAAAAAAAAAHAAUAAgAAAAAAAAAIAAUAAgAAAAAAAAAIAAQAAgAAAAAAAAAIAAMAAgAAAAAAAAAIAAIAAgAAAAAAAAAIAAEAAgAAAAAAAAAIAAAAAgAAAAAAAAAHAP//AgAAAAAAAAAHAP7/AgAAAAAAAAAHAP3/AgAAAAAAAAAHAPz/AgAAAAAAAAAIAPz/AgAAAAAAAAAIAP3/AgAAAAAAAAAIAP7/AgAAAAAAAAAIAP//AgAAAAAAAAAHAAAAAgAAAAAAAAAHAAEAAgAAAAAAAAAHAAIAAgAAAAAAAAAHAAMAAgAAAAAAAAAHAAQAAgAAAAAAAAAGAAQAAgAAAAAAAAAFAAQAAgAAAAAAAAAEAAQAAgAAAAAAAAADAAQAAgAAAAAAAAACAAQAAgAAAAAAAAABAAQAAgAAAAAAAAAAAAQAAgAAAAAAAAD//wQAAgAAAAAAAAD+/wQAAgAAAAAAAAD9/wQAAgAAAAAAAAD8/wQAAgAAAAAAAAD7/wQAAgAAAAAAAAD6/wQAAgAAAAAAAAD5/wQAAgAAAAAAAAD5//7/AgAAAAAAAAD5//3/AgAAAAAAAAD5//z/AgAAAAAAAAD6//z/AgAAAAAAAAD7//z/AgAAAAAAAAD8//z/AgAAAAAAAAD9//z/AgAAAAAAAAD+//z/AgAAAAAAAAD///z/AgAAAAAAAAAAAPz/AgAAAAAAAAABAPz/AgAAAAAAAAACAPz/AgAAAAAAAAADAPz/AgAAAAAAAAAEAPz/AgAAAAAAAAAFAPz/AgAAAAAAAAAGAPz/AgAAAAAAAAD8//3/AgAAAAAAAAD8//7/AgAAAAAAAAD8////AgAAAAAAAAD8/wAAAgAAAAAAAAD7////AgAAAAAAAAD7//7/AgAAAAAAAAD7//3/AgAAAAAAAAD6//3/AgAAAAAAAAD6//7/AgAAAAAAAAD7/wAAAgAAAAAAAAD7/wEAAgAAAAAAAAD7/wIAAgAAAAAAAAD7/wMAAgAAAAAAAAD6/wMAAgAAAAAAAAD5/wMAAgAAAAAAAAD5/wIAAgAAAAAAAAD6/wIAAgAAAAAAAAD6/wEAAgAAAAAAAAD5/wEAAgAAAAAAAAD5/wAAAgAAAAAAAAD5////AgAAAAAAAAD6////AgAAAAAAAAD6/wAAAgAAAAAAAAAKAPv/AgAAAAAAAAAKAPz/AgAAAAAAAAAKAP3/AgAAAAAAAAAKAP7/AgAAAAAAAAAKAP//AgAAAAAAAAAKAAAAAgAAAAAAAAAKAAEAAgAAAAAAAAAKAAIAAgAAAAAAAAAKAAMAAgAAAAAAAAAKAAQAAgAAAAAAAAAKAAUAAgAAAAAAAAAKAAYAAgAAAAAAAAALAAYAAgAAAAAAAAALAAUAAgAAAAAAAAALAAQAAgAAAAAAAAALAAMAAgAAAAAAAAALAAIAAgAAAAAAAAALAAEAAgAAAAAAAAALAAAAAgAAAAAAAAALAP//AgAAAAAAAAALAP7/AgAAAAAAAAALAP3/AgAAAAAAAAALAPz/AgAAAAAAAAALAPv/AgAAAAAAAAALAPr/AgAAAAAAAAAKAPr/AgAAAAAAAAAJAPr/AgAAAAAAAAAIAPr/AgAAAAAAAAAHAPr/AgAAAAAAAAAGAPr/AgAAAAAAAAAFAPr/AgAAAAAAAAAEAPr/AgAAAAAAAAADAPr/AgAAAAAAAAACAPr/AgAAAAAAAAABAPr/AgAAAAAAAAAAAPr/AgAAAAAAAAD///r/AgAAAAAAAAD+//r/AgAAAAAAAAD9//r/AgAAAAAAAAD8//r/AgAAAAAAAAD7//r/AgAAAAAAAAD6//r/AgAAAAAAAAD5//r/AgAAAAAAAAD4//r/AgAAAAAAAAD3//r/AgAAAAAAAAD3//v/AgAAAAAAAAD3//z/AgAAAAAAAAD3//3/AgAAAAAAAAD3//7/AgAAAAAAAAD3////AgAAAAAAAAD3/wAAAgAAAAAAAAD3/wEAAgAAAAAAAAD3/wIAAgAAAAAAAAD3/wMAAgAAAAAAAAD3/wQAAgAAAAAAAAD3/wUAAgAAAAAAAAD3/wYAAgAAAAAAAAA=")
+tile_set = SubResource("TileSet_lgbju")
+
+[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=707709849]
+color = Color(0, 0, 0, 1)
+
+[node name="Letter" parent="." unique_id=494366732 instance=ExtResource("5_t6lgn")]
+position = Vector2(802, 363)
+rotation = -0.8785716
+scale = Vector2(0.5, 0.5)
+textLetter = "Привет, это письмо, чтобы выйти нажми на Е"
+
+[node name="Letter2" parent="." unique_id=1853408587 instance=ExtResource("5_t6lgn")]
+position = Vector2(2796, 1157)
+rotation = 0.8823792
+scale = Vector2(0.5, 0.5)
+textLetter = "Они бояться взгляда"
+
+[node name="Player" parent="." unique_id=776793807 groups=["Player"] instance=ExtResource("1_0bwfy")]
+position = Vector2(-949, 250)
+
+[node name="Door" parent="." unique_id=1984083007 instance=ExtResource("6_q4ml5")]
+position = Vector2(-252, -60)

@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://cjixhxy705nie"]
+
+[ext_resource type="Texture2D" uid="uid://ccn4bvpklc1b3" path="res://Assets/Sprites/Player/Idle.png" id="1_f3tjb"]
+[ext_resource type="Script" uid="uid://bfe3lvvjbds77" path="res://Scripts/player.gd" id="1_sx8ph"]
+[ext_resource type="Texture2D" uid="uid://bup8rwbwhjx18" path="res://Assets/Sprites/Player/Без имени.png" id="3_lhj2a"]
+[ext_resource type="Texture2D" uid="uid://s8afyya6wr6w" path="res://Assets/Sprites/Player/png-klev-club-laaa-p-razmitii-krug-belii-png-1.png" id="4_g3pbq"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_h30nj"]
+radius = 60.0
+
+[node name="Player" type="CharacterBody2D" unique_id=776793807]
+script = ExtResource("1_sx8ph")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1140070461]
+position = Vector2(37, -8)
+rotation = -1.5707964
+texture = ExtResource("1_f3tjb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1261980088]
+position = Vector2(1, 0)
+shape = SubResource("CircleShape2D_h30nj")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=959602365]
+zoom = Vector2(0.4, 0.4)
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=1010142494]
+position = Vector2(-1.1136475, -0.27505398)
+rotation = -1.5707964
+scale = Vector2(1.5, 1.68)
+shadow_enabled = true
+texture = ExtResource("3_lhj2a")
+offset = Vector2(5.9360094, 683.61127)
+texture_scale = 2.43
+
+[node name="PointLight2D2" type="PointLight2D" parent="." unique_id=830964567]
+position = Vector2(42, 4.9999995)
+rotation = -1.5707964
+scale = Vector2(-0.7988766, 0.95284766)
+energy = 0.3
+shadow_enabled = true
+texture = ExtResource("4_g3pbq")
+texture_scale = 1.3
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1152618548]
