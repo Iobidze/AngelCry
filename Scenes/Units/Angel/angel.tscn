@@ -1,0 +1,53 @@
+[gd_scene format=3 uid="uid://cc1uqkbswahoj"]
+
+[ext_resource type="Texture2D" uid="uid://b7m6cri1da3f2" path="res://Assets/Sprites/Angels/angel 2.png" id="1_73cpf"]
+[ext_resource type="Script" uid="uid://cg74omy7jn35o" path="res://Scripts/angel.gd" id="1_sl4ne"]
+[ext_resource type="Texture2D" uid="uid://chsxg0t22qiid" path="res://Assets/Sprites/Angels/angel 1.png" id="2_sl4ne"]
+[ext_resource type="Texture2D" uid="uid://bb5k5qpt5btg2" path="res://Assets/Sprites/Angels/angel 3.png" id="3_aoyje"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kkb67"]
+animations = [{
+"frames": [{
+"duration": 0.3,
+"texture": ExtResource("1_73cpf")
+}, {
+"duration": 0.3,
+"texture": ExtResource("2_sl4ne")
+}, {
+"duration": 0.3,
+"texture": ExtResource("3_aoyje")
+}],
+"loop": true,
+"name": &"Walk",
+"speed": 5.0
+}]
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_ouppf"]
+polygon = PackedVector2Array(-66, 63, -53, 68, -43, 73, -29, 77, -18, 79, -4, 81, 8, 83, 23, 83, 35, 79, 47, 71, 58, 67, 67, 61, 75, 56, 81, 47, 85, 38, 88, 30, 86, 23, 79, 18, 69, 15, 57, 15, 44, 23, 33, 33, 22, 40, 13, 47, -4, 49, -16, 45, -31, 36, -41, 32, -57, 27, -75, 31, -81, 42, -77, 54)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_sl4ne"]
+radius = 78.025635
+
+[node name="Angel" type="CharacterBody2D" unique_id=210951810]
+script = ExtResource("1_sl4ne")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1961926582]
+sprite_frames = SubResource("SpriteFrames_kkb67")
+animation = &"Walk"
+frame = 2
+frame_progress = 0.29866982
+
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="." unique_id=1434164422]
+rect = Rect2(-129, -195, 268, 332)
+enable_node_path = NodePath(".")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=139790631]
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=668887527]
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="." unique_id=1486297460]
+occluder = SubResource("OccluderPolygon2D_ouppf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=834572679]
+position = Vector2(0, 69)
+shape = SubResource("CircleShape2D_sl4ne")

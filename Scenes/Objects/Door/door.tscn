@@ -14,13 +14,18 @@ radius = 524.2757
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_4e2o1"]
 polygon = PackedVector2Array(-342, -19, 291, -19, 291, 16, -343, 17)
 
-[node name="Door" type="Node2D" unique_id=1984083007 node_paths=PackedStringArray("door_sprite", "door_body", "door_collision", "interaction_area", "light_occluder", "progress_bar", "interaction_label")]
+[sub_resource type="CircleShape2D" id="CircleShape2D_dvgly"]
+radius = 925.0346
+
+[node name="Door" type="Node2D" unique_id=1984083007 node_paths=PackedStringArray("door_sprite", "door_body", "door_collision", "interaction_area", "light_occluder", "angel_detection_area", "progress_bar", "interaction_label")]
 script = ExtResource("1_40c2i")
 door_sprite = NodePath("Sprite2D")
 door_body = NodePath("StaticBody2D")
 door_collision = NodePath("StaticBody2D/CollisionShape2D2")
 interaction_area = NodePath("Area2D")
 light_occluder = NodePath("LightOccluder2D")
+angel_detection_area = NodePath("Area2D_Angel")
+angel_open_delay = 5.0
 progress_bar = NodePath("CanvasLayer/Control/TextureProgressBar")
 interaction_label = NodePath("CanvasLayer/Control/Label")
 
@@ -72,6 +77,11 @@ shape = SubResource("CircleShape2D_4e2o1")
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="." unique_id=1090267461]
 occluder = SubResource("OccluderPolygon2D_4e2o1")
+
+[node name="Area2D_Angel" type="Area2D" parent="." unique_id=252626201]
+
+[node name="angel_detection_area" type="CollisionShape2D" parent="Area2D_Angel" unique_id=1790910665]
+shape = SubResource("CircleShape2D_dvgly")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_body_entered_door"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_body_exited_door"]

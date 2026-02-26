@@ -13,24 +13,36 @@ extends Node2D
 @export_group("Hold Settings")
 @export var hold_time: float = 1.0
 
+@export_group("Angel Settings")
+@export var angel_detection_area: Area2D
+@export var angel_open_delay: float = 12.0
+
 @export_group("UI Elements")
 @export var progress_bar: TextureProgressBar
 @export var interaction_label: Label
 
 # Состояния
 var player_in_range: bool = false
+var angel_in_range: bool = false
 var is_open: bool = false
 var is_animating: bool = false
 var hold_progress: float = 0.0
 var current_rotation: float = 0.0
 var target_rotation: float = 0.0
-var holding: bool = false  # Флаг процесса удержания
+var holding: bool = false
+var angel_timer: float = 0.0
+var angel_triggered: bool = false
 
 func _ready():
-	# Подключаем сигналы
-	# if interaction_area:
-		# interaction_area.body_entered.connect(_on_body_entered_door)
-		# interaction_area.body_exited.connect(_on_body_exited_door)
+	# Подключаем сигналы для игрока
+	if interaction_area:
+		interaction_area.body_entered.connect(_on_player_entered)
+		interaction_area.body_exited.connect(_on_player_exited)
+	
+	# Подключаем сигналы для Angel
+	if angel_detection_area:
+		angel_detection_area.body_entered.connect(_on_angel_entered)
+		angel_detection_area.body_exited.connect(_on_angel_exited)
 	
 	# Скрываем UI изначально
 	if progress_bar:
@@ -49,12 +61,29 @@ func _ready():
 func _process(delta):
 	if is_animating:
 		animate_door(delta)
+	
+	# Логика для Angel (без UI)
+	if angel_in_range and not is_open and not is_animating and not angel_triggered:
+		angel_timer += delta
+		
+		# Angel открывает дверь через 12 секунд
+		if angel_timer >= angel_open_delay:
+			angel_triggered = true
+			open_door_by_angel()
+	
+	# Сбрасываем таймер если Angel ушел
+	if not angel_in_range and angel_timer > 0:
+		angel_timer = 0.0
+		angel_triggered = false
 
 func _input(event):
-	# Показываем подсказку ТОЛЬКО когда игрок рядом и дверь не анимируется
+	# Показываем подсказку когда игрок рядом и дверь не анимируется
 	if player_in_range and not is_animating and not holding:
 		if event.is_action_pressed("action"):
 			start_holding()
+			# Сбрасываем таймер Angel если игрок начал открывать
+			angel_timer = 0.0
+			angel_triggered = false
 	elif event.is_action_released("action"):
 		stop_holding()
 
@@ -101,37 +130,37 @@ func _physics_process(delta):
 			if player_in_range and not is_animating:
 				show_interaction_prompt()
 
-func _on_body_entered_door (body):
-	print("1. Вошел объект: ", body.name)
-	print("2. Группы объекта: ", body.get_groups()) 
+func _on_player_entered(body):
 	if body.is_in_group("Player"):
-		print("3. Это игрок! 👍")
 		player_in_range = true
 		# Показываем подсказку только если дверь не анимируется
 		if not is_animating and not holding:
 			show_interaction_prompt()
-		else:
-			print("3. Это НЕ игрок, группа не 'Player'")
 
-
-func _on_body_exited_door (body):
+func _on_player_exited(body):
 	if body.is_in_group("Player"):
 		player_in_range = false
-		# Скрываем ВСЕ элементы UI
 		hide_all_ui()
 		holding = false
 		hold_progress = 0.0
+
+func _on_angel_entered(body):
+	if body.is_in_group("Angel"):
+		angel_in_range = true
+		angel_timer = 0.0
+		angel_triggered = false
+
+func _on_angel_exited(body):
+	if body.is_in_group("Angel"):
+		angel_in_range = false
+		angel_timer = 0.0
+		angel_triggered = false
 
 func show_interaction_prompt():
 	if interaction_label and not is_animating and not holding and player_in_range:
 		var action = "Открыть" if not is_open else "Закрыть"
 		interaction_label.text = action + " (E)"
 		interaction_label.show()
-	
-
-func hide_interaction_prompt():
-	if interaction_label:
-		interaction_label.hide()
 
 func hide_all_ui():
 	if interaction_label:
@@ -152,6 +181,10 @@ func start_holding():
 		progress_bar.value = 0
 	if interaction_label:
 		interaction_label.hide()
+	
+	# Сбрасываем таймер Angel
+	angel_timer = 0.0
+	angel_triggered = false
 
 func stop_holding():
 	if holding:
@@ -169,9 +202,12 @@ func stop_holding():
 				if door_body:
 					door_body.rotation_degrees = current_rotation
 			
-			# Показываем подсказку снова
+			# Показываем подсказку снова если игрок рядом
 			if player_in_range and not is_animating:
 				show_interaction_prompt()
+
+func open_door_by_angel():
+	toggle_door()
 
 func toggle_door():
 	if is_animating:
@@ -192,6 +228,8 @@ func toggle_door():
 	# Скрываем весь UI
 	hide_all_ui()
 	hold_progress = 0.0
+	angel_timer = 0.0
+	angel_triggered = false
 
 func animate_door(delta):
 	if not door_sprite:
