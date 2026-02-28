@@ -123,7 +123,6 @@ tile_map_data = PackedByteArray("AAD/////AAAAAAAAAAAAAP//AgAAAAAABAABAP//AgAAAAA
 tile_set = SubResource("TileSet_lgbju")
 
 [node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=707709849]
-visible = false
 color = Color(0, 0, 0, 1)
 
 [node name="Letter" parent="." unique_id=494366732 instance=ExtResource("5_t6lgn")]

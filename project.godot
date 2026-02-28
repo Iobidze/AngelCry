@@ -19,8 +19,8 @@ Global="*uid://cxb8upi7bohsh"
 
 [display]
 
-window/size/viewport_width=1768
-window/size/viewport_height=992
+window/size/viewport_width=1600
+window/size/viewport_height=900
 
 [global_group]
 
