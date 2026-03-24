@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://csvnxwbpljvax"]
+
+[ext_resource type="Script" uid="uid://bfbk2s5bc0e3f" path="res://player.gd" id="1_onrkg"]
+[ext_resource type="Texture2D" uid="uid://ccn4bvpklc1b3" path="res://Idle.png" id="2_i3pqv"]
+[ext_resource type="Texture2D" uid="uid://84logq6lq342" path="res://Без имени.png" id="3_i3pqv"]
+[ext_resource type="Texture2D" uid="uid://b4ilyxp58rq6c" path="res://png-klev-club-laaa-p-razmitii-krug-belii-png-1.png" id="4_hqtel"]
+[ext_resource type="AudioStream" uid="uid://df8ap4bn4i2lw" path="res://stuk-serdca-_-strannyy-on-takoy-eto-zvuk_-vot-tak-ono-stuchitsya.mp3" id="5_sweqy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i3pqv"]
+size = Vector2(128, 128)
+
+[node name="Player" type="CharacterBody2D" unique_id=352458540 groups=["Player"]]
+collision_layer = 2
+script = ExtResource("1_onrkg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1148449320]
+position = Vector2(24, -8)
+rotation = -1.5707964
+texture = ExtResource("2_i3pqv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=620285768 groups=["Player"]]
+shape = SubResource("RectangleShape2D_i3pqv")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=289611655]
+zoom = Vector2(0.3, 0.3)
+process_callback = 0
+position_smoothing_enabled = true
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=990078357]
+texture_repeat = 1
+position = Vector2(0, -8)
+scale = Vector2(30.685833, 38.435886)
+color = Color(0.7356847, 0.7351643, 0, 1)
+energy = 2.85
+shadow_enabled = true
+texture = ExtResource("3_i3pqv")
+offset = Vector2(43.992863, 0.007432461)
+texture_scale = 0.12
+metadata/_edit_group_ = true
+
+[node name="PointLight2D2" type="PointLight2D" parent="." unique_id=1274159869]
+position = Vector2(24, 0)
+scale = Vector2(10.873855, 18.420181)
+color = Color(0.4351923, 0.43519226, 0.43519226, 1)
+energy = 2.41
+texture = ExtResource("4_hqtel")
+texture_scale = 0.01
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1104324933]
+position = Vector2(24, 1.9073486e-06)
+scale = Vector2(10.873855, 18.420181)
+stream = ExtResource("5_sweqy")
+max_distance = 317.0

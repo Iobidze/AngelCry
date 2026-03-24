@@ -49,8 +49,8 @@ func is_watched() -> bool:
 		return false
 		
 	# 2. Если фонарик выключен — ангел может идти
-	#if not player.flashlight.enabled:
-		#return false
+	if not player.flashlight.enabled:
+		return false
 
 	# 3. Проверка: светит ли фонарик В СТОРОНУ ангела?
 	var dir_to_angel = player.global_position.direction_to(global_position)

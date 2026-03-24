@@ -1,13 +1,13 @@
-[gd_scene format=3 uid="uid://unqe86xd0jyh"]
+[gd_scene format=3 uid="uid://gu30cgksulim"]
 
-[ext_resource type="Texture2D" uid="uid://3w30nb4w7es6" path="res://Assets/Sprites/Letters/letter.png" id="1_3l86w"]
-[ext_resource type="Script" uid="uid://ce0lfryokrpqx" path="res://Scripts/letter.gd" id="1_swifk"]
+[ext_resource type="Script" uid="uid://ce0lfryokrpqx" path="res://Scripts/letter.gd" id="1_le0t0"]
+[ext_resource type="Texture2D" uid="uid://cgfwpsu434uaf" path="res://Scenes/Levels/Assets/pic.png" id="2_qe1kr"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3l86w"]
 radius = 106.04244
 
-[node name="Letter" type="Node2D" unique_id=494366732]
-script = ExtResource("1_swifk")
+[node name="Pic" type="Node2D" unique_id=494366732]
+script = ExtResource("1_le0t0")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1145667184]
 
@@ -15,7 +15,8 @@ script = ExtResource("1_swifk")
 shape = SubResource("CircleShape2D_3l86w")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D" unique_id=581648532]
-texture = ExtResource("1_3l86w")
+position = Vector2(-58, 2)
+texture = ExtResource("2_qe1kr")
 
 [node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=869886603]
 

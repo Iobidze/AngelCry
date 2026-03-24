@@ -3,14 +3,11 @@
 [ext_resource type="Texture2D" uid="uid://ccn4bvpklc1b3" path="res://Assets/Sprites/Player/Idle.png" id="1_f3tjb"]
 [ext_resource type="Script" uid="uid://bfe3lvvjbds77" path="res://Scripts/player.gd" id="1_sx8ph"]
 [ext_resource type="Texture2D" uid="uid://bup8rwbwhjx18" path="res://Assets/Sprites/Player/Без имени.png" id="3_lhj2a"]
-[ext_resource type="Texture2D" uid="uid://d0scf48msbyfq" path="res://Assets/Sprites/UI/png-klev-club-3kzf-p-razmitii-krug-png-24.png" id="3_pyocp"]
 [ext_resource type="Texture2D" uid="uid://s8afyya6wr6w" path="res://Assets/Sprites/Player/png-klev-club-laaa-p-razmitii-krug-belii-png-1.png" id="4_g3pbq"]
+[ext_resource type="PackedScene" uid="uid://doo2h6psapsnl" path="res://Scenes/UI/pause.tscn" id="5_pyocp"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_h30nj"]
 radius = 60.0
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_hnafy"]
-radius = 635.03
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_s1tjd"]
 radius = 80.09994
@@ -28,13 +25,7 @@ position = Vector2(1, 0)
 shape = SubResource("CircleShape2D_h30nj")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=959602365]
-zoom = Vector2(0.4, 0.4)
-
-[node name="TouchScreenButton" type="TouchScreenButton" parent="Camera2D" unique_id=676196995]
-position = Vector2(74, 733.00006)
-scale = Vector2(0.041429617, 0.04239509)
-texture_normal = ExtResource("3_pyocp")
-shape = SubResource("CircleShape2D_hnafy")
+zoom = Vector2(0.5, 0.5)
 
 [node name="PointLight2D" type="PointLight2D" parent="." unique_id=1010142494]
 position = Vector2(-1.1136475, -0.27505398)
@@ -46,9 +37,9 @@ offset = Vector2(5.9360094, 683.61127)
 texture_scale = 2.43
 
 [node name="PointLight2D2" type="PointLight2D" parent="." unique_id=830964567]
-position = Vector2(42, 4.9999995)
+position = Vector2(36, -1.9999986)
 rotation = -1.5707964
-scale = Vector2(-0.7988766, 0.95284766)
+scale = Vector2(-0.69939095, 0.7114963)
 energy = 0.3
 shadow_enabled = true
 texture = ExtResource("4_g3pbq")
@@ -61,4 +52,7 @@ texture_scale = 1.3
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1191607259]
 shape = SubResource("CircleShape2D_s1tjd")
 
-[connection signal="pressed" from="Camera2D/TouchScreenButton" to="." method="_on_touch_screen_button_pressed"]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=220759298]
+layer = 10
+
+[node name="Pause" parent="CanvasLayer" unique_id=1664054552 instance=ExtResource("5_pyocp")]
