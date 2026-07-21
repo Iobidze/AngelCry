@@ -1,0 +1,9 @@
+res://Scenes/Levels/Level2/level_2.tscn
+res://Scenes/Levels/Level1/level_1.tscn
+res://Scenes/Levels/Level1/ladder.gd
+res://Scenes/UI/options.tscn
+res://Scenes/UI/options.gd
+res://Scenes/UI/dead.gd
+res://Scenes/Levels/Level0/level_0.tscn
+res://Scenes/UI/Dead.tscn
+res://Scenes/Levels/Level3/level_3.tscn

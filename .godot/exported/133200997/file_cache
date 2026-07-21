@@ -1,0 +1,17 @@
+res://Assets/Sprites/UI/player.tscn::a45c278411a4e5c828c4446171c9703b::1772474331::res://.godot/exported/133200997/export-60af20f17cb0d4c3ed209c39a37dc0ac-player.scn
+res://Scenes/Levels/testlevel.tscn::afc82311bbefe871c99497af92c2bdfd::1777145641::res://.godot/exported/133200997/export-2a517601ebce5bccc707940554d6f9d2-testlevel.scn
+res://Scenes/Objects/Door/door.tscn::dd7fa770de059bda12372c01977004d7::1776792545::res://.godot/exported/133200997/export-2a3e60e1425f999de1287d5e986b07af-door.scn
+res://Scenes/Objects/Letter/letter.tscn::1f0841f29f97312a82d0bbe0c95ffae1::1775033787::res://.godot/exported/133200997/export-820dce94a580b397a9968766cafbebc3-letter.scn
+res://Scenes/UI/main_menu.tscn::b27f2974e511cb471e16ecd8c21aa718::1776785421::res://.godot/exported/133200997/export-f42f7f3102c37a88392546843bad643d-main_menu.scn
+res://Scenes/UI/pause.tscn::1286b75b31d5d2f9953032bab27fc092::1772911848::res://.godot/exported/133200997/export-45392b7f09266eb1a790566b944cf727-pause.scn
+res://Scenes/Units/Angel/angel.tscn::4cd8b4b7ff73e84f4f12372529972013::1777667512::res://.godot/exported/133200997/export-b784e2d639bff78b471aa9b3c46bafdf-angel.scn
+res://Scenes/Units/Player/player.tscn::98e48738af80004cdb3df7cdf0ca7ed6::1778081491::res://.godot/exported/133200997/export-71e9d672d0628998e7503eb999870871-player.scn
+res://Scenes/Levels/Level0/level_0.tscn::c155c4aeb82a11f87293faa95ac58805::1778082117::res://.godot/exported/133200997/export-50fbff0adf8de61279a8482c8f6add51-level_0.scn
+res://Scenes/Levels/tile_map_layer.tscn::3074b04bae5661bdcda8938c110be587::1775034604::res://.godot/exported/133200997/export-795306537d54cdd8075146bb58094364-tile_map_layer.scn
+res://Scenes/Objects/Interior/interior.tscn::d0c5c9a9491f7b8f5e4ebb7ef37ae6ee::1776779749::res://.godot/exported/133200997/export-a10175783a51d9f38157da7d70f596ef-interior.scn
+res://Scenes/Objects/Pic/pic.tscn::91747fc6db70b43bda5653d5faa54844::1774365654::res://.godot/exported/133200997/export-648216f42299c4192d7f21db7428166b-pic.scn
+res://Scenes/Objects/Interior/light.tscn::02220329638da7356828e8e7b46ea667::1775042985::res://.godot/exported/133200997/export-2711b5047ab3962d554f4c5099b0bfac-light.scn
+res://Scenes/Objects/Interior/point_light.tscn::c598f917cb0de9a9f5f4960bebe578cb::1775043383::res://.godot/exported/133200997/export-f0a6dc6daa8b8f4d2d55eed6952d2a06-point_light.scn
+res://Scenes/UI/Dead.tscn::1acd08e337471923712f2a5f12dbeb79::1778081280::res://.godot/exported/133200997/export-910b968f1817624401d8b72f77294225-Dead.scn
+res://Scenes/Levels/ladder.tscn::a50402da8bfca523284cf1b9636fd20a::1776792647::res://.godot/exported/133200997/export-1e968bf1c2f6519aa05b7e1a11e6a12d-ladder.scn
+res://Scenes/Levels/Level1/level_1.tscn::dce85f570d3d4b152305b062ba55a288::1778083550::res://.godot/exported/133200997/export-1741a588391d8ee5c51d66822d89cb3e-level_1.scn

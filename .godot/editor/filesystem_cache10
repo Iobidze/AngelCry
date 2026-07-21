@@ -1,0 +1,128 @@
+3e2cc9f74922c2592e3236b3f5b5179c
+::res://::1784640134
+export_presets.cfg::TextFile::-1::1778083570::0::1::::<><><>0<>0<><>::
+::res://android/::1771859073
+::res://Assets/::1771007237
+::res://Assets/Fonts/::1771007237
+::res://Assets/Sounds/::1771007225
+::res://Assets/Sprites/::1771866586
+::res://Assets/Sprites/Angels/::1776769656
+angel 1.png::CompressedTexture2D::5302730621721076227::1771702813::1771702813::1::::<><><>0<>0<>328b37cd0f2e10be7aa52fcdc5c10ef9<>res://.godot/imported/angel 1.png-2ae46a392a4dc8a4fbe36eef768b6d6c.ctex::
+angel 2.png::CompressedTexture2D::4659122917963175205::1771702818::1771702818::1::::<><><>0<>0<>fbd6848456677a1c04d9a2dfdaef166f<>res://.godot/imported/angel 2.png-5aae798853d0edaeae5a315fbe0d4d81.ctex::
+angel 3.png::CompressedTexture2D::2519202468146831419::1771702821::1771702821::1::::<><><>0<>0<>344fa4bb4d285188b5390144d1eaf51f<>res://.godot/imported/angel 3.png-5fd0b9590fe7ebc983f236b593a83795.ctex::
+angel 4.png::CompressedTexture2D::7542974274481249341::1776769655::1776769656::1::::<><><>0<>0<>9c1eaa612ba9fb4ca920171d50526619<>res://.godot/imported/angel 4.png-f2f84c8746a8a8487e96ad67c3819477.ctex::
+png-klev-club-3kzf-p-razmitii-krug-png-24.png::CompressedTexture2D::1009782091396757454::1772302810::1772302810::1::::<><><>0<>0<>fa3f121a74754445ee65a05b8579dd4f<>res://.godot/imported/png-klev-club-3kzf-p-razmitii-krug-png-24.png-96e103f1c6eb7baeb50e249bce838370.ctex::
+::res://Assets/Sprites/Doors/::1771616957
+Door.png::CompressedTexture2D::1368321851682542386::1771441287::1771441287::1::::<><><>0<>0<>c862fd15faf7f7fe07940b4ad5acedd8<>res://.godot/imported/Door.png-8a3276bb96ced29f631fdfe88bfebe5f.ctex::
+progressbar0.png::CompressedTexture2D::463919946142697254::1771616734::1771616735::1::::<><><>0<>0<>a1b14e9786074a47962bada20725560e<>res://.godot/imported/progressbar0.png-bb385e52997878c6f8f3f1c9bacaed34.ctex::
+progressbar1.png::CompressedTexture2D::6172459702615795968::1771616957::1771616957::1::::<><><>0<>0<>0571b28a20473acb303373c78ac941d1<>res://.godot/imported/progressbar1.png-d1eb0a7e6e0a74042181277e4a9cdad0.ctex::
+::res://Assets/Sprites/Furniture/::1771866949
+::res://Assets/Sprites/Letters/::1773947975
+letter.png::CompressedTexture2D::2012449338795951187::1773947974::1773947975::1::::<><><>0<>0<>0813a27bdd43e2dbf8368d7727d5f505<>res://.godot/imported/letter.png-37fc573e8fcfc834f40af9b718b98dae.ctex::
+::res://Assets/Sprites/Player/::1776798729
+BatteryBar2.png::CompressedTexture2D::3834383465703200995::1776798729::1776798729::1::::<><><>0<>0<>a3f4af6cd8975c041ad4b0eed3e88ac0<>res://.godot/imported/BatteryBar2.png-e0712d2f62725ccdc7f390ad116063da.ctex::
+BatteryBar.png::CompressedTexture2D::2200948533961588891::1776798726::1776798726::1::::<><><>0<>0<>333e77ad5cc10d2fd9a67b81775318c5<>res://.godot/imported/BatteryBar.png-473835a3dbe1ed917a0a753c25497dc4.ctex::
+Idle.png::CompressedTexture2D::4941819670680758246::1771076843::1771076849::1::::<><><>0<>0<>2d94c86e366347dbb066633a688ac56a<>res://.godot/imported/Idle.png-ca306b7d696363073193b2ee22d001c7.ctex::
+png-klev-club-laaa-p-razmitii-krug-belii-png-1.png::CompressedTexture2D::1331533878016101272::1771082918::1771082918::1::::<><><>0<>0<>b214772b0c667a320a95779b6f43ab2c<>res://.godot/imported/png-klev-club-laaa-p-razmitii-krug-belii-png-1.png-50b73254b316c0e9c2f17318f823319a.ctex::
+Без имени.png::CompressedTexture2D::3823198400090144425::1771084661::1771084661::1::::<><><>0<>0<>34e355b5bea5a38a9c22454274b49106<>res://.godot/imported/Без имени.png-da4f2d54bc49a35729f851bb90f6986e.ctex::
+::res://Assets/Sprites/UI/::1772474342
+player.gd::GDScript::7944470716783627984::1772474342::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player.tscn::PackedScene::6080424037626933635::1772474331::0::1::::<><><>0<>0<><>::uid://bfbk2s5bc0e3f::::res://player.gd<>uid://ccn4bvpklc1b3::::res://Idle.png<>uid://84logq6lq342::::res://Без имени.png<>uid://b4ilyxp58rq6c::::res://png-klev-club-laaa-p-razmitii-krug-belii-png-1.png<>uid://df8ap4bn4i2lw::::res://stuk-serdca-_-strannyy-on-takoy-eto-zvuk_-vot-tak-ono-stuchitsya.mp3
+png-klev-club-3kzf-p-razmitii-krug-png-24.png::CompressedTexture2D::8951273879283292418::1772305516::1772305517::1::::<><><>0<>0<>38f45f9cb11bc88e1b995d7980d07e41<>res://.godot/imported/png-klev-club-3kzf-p-razmitii-krug-png-24.png-9ed9e88f8b5eeb416ee5c65185376345.ctex::
+::res://Audio/::1777285643
+ong_howlireaky_and_distant_28337.mp3::AudioStreamMP3::7060893577779913053::1776790184::1776790487::1::::<><><>0<>0<>55c966e4996fe3edd4d3679bd6297ec0<>res://.godot/imported/ong_howlireaky_and_distant_28337.mp3-eae1ae607956f290361740e912a1349b.mp3str::
+stuk-serdca-_-strannyy-on-takoy-eto-zvuk_-vot-tak-ono-stuchitsya.mp3::AudioStreamMP3::1181408887672327723::1776787322::1776788253::1::::<><><>0<>0<>1110dde76d9fc136a016e64701beff68<>res://.godot/imported/stuk-serdca-_-strannyy-on-takoy-eto-zvuk_-vot-tak-ono-stuchitsya.mp3-60fe92a092d3c83733cf8c0b61f7eb6f.mp3str::
+zvuk-zhuzhzhanie-muhi.mp3::AudioStreamMP3::2006102164794236092::1776790377::1777285643::1::::<><><>0<>0<>8bb5a28a325dfc39e88162439be61956<>res://.godot/imported/zvuk-zhuzhzhanie-muhi.mp3-c150db8f4fc5b95e3060ef1121b3e79f.mp3str::
+zvuki-dlya-montazha-avariya-bolshoe-bokovoe-stolknovenie.mp3::AudioStreamMP3::1586815909855737078::1776790995::1776791011::1::::<><><>0<>0<>0b55a5eb1f8b969e3bd73baf754e2013<>res://.godot/imported/zvuki-dlya-montazha-avariya-bolshoe-bokovoe-stolknovenie.mp3-fd40cb00d603521a25175e8da69bd120.mp3str::
+::res://Audio/angel_sound/::1776798706
+759c43283530da3.mp3::AudioStreamMP3::2673408171037157762::1776793136::1776793144::1::::<><><>0<>0<>1027d9a69367e09a06fd797a95c1eb42<>res://.godot/imported/759c43283530da3.mp3-56097c529de8fd6d21f57ef69336cbfa.mp3str::
+59018dacd1c65c3.mp3::AudioStreamMP3::855840033380353229::1776793136::1776793136::1::::<><><>0<>0<>9551913058ec387bbb3f42d3c4202c7c<>res://.godot/imported/59018dacd1c65c3.mp3-e8624f1c0f11f9ce25f30f1832ac0f86.mp3str::
+BatteryBar.png::CompressedTexture2D::7651889226563315772::1776798706::1776798706::1::::<><><>0<>0<>5bfa79681c4e843e54daee11f9e5de99<>res://.godot/imported/BatteryBar.png-24d50635d11326c6bffbccfc87cbf310.ctex::
+dementor.mp3::AudioStreamMP3::8785064767869624058::1776793136::1776793136::1::::<><><>0<>0<>5dd59474db1d6717c75ec06164c35890<>res://.godot/imported/dementor.mp3-b988418eb436093bca89a9fc7978bf6d.mp3str::
+fb239dbda41f910.mp3::AudioStreamMP3::2014644094123566969::1776793136::1776793136::1::::<><><>0<>0<>fcee7aaf13fba595f348ec73062de802<>res://.godot/imported/fb239dbda41f910.mp3-23b9316e8c50412d79084d3805f901a5.mp3str::
+kamni-zvuki.mp3::AudioStreamMP3::6421501238193947340::1776793136::1776793136::1::::<><><>0<>0<>68d8449e44aecbe6ce63a775920cb4e0<>res://.godot/imported/kamni-zvuki.mp3-e9c42354c3c0cfd15c65145264da3458.mp3str::
+::res://EXE/::1778083570
+AngelCry.apple-touch-icon.png::CompressedTexture2D::6890037579996703267::1774980435::1774981233::1::::<><><>0<>0<>962e354bdcc03667dcd6928ba8e3ff0a<>res://.godot/imported/AngelCry.apple-touch-icon.png-56b03c0495dc85fb33d6ee9a2f8eab62.ctex::
+AngelCry.icon.png::CompressedTexture2D::3461162162802969577::1774980435::1774981233::1::::<><><>0<>0<>b78fd94fc2ac4a3d6577d02fe78fabc2<>res://.godot/imported/AngelCry.icon.png-2ac0dc491e2d578d14186c3d539fff04.ctex::
+AngelCry.png::CompressedTexture2D::1843966639159222856::1774980435::1774981233::1::::<><><>0<>0<>351f4b5151111103934d3104a5da88c7<>res://.godot/imported/AngelCry.png-4b93228d2fb6cf3b7e1e647927ede730.ctex::
+::res://Scenes/::1772302832
+::res://Scenes/Levels/::1784460113
+ladder.tscn::PackedScene::219640097362396482::1776792647::0::1::::<><><>0<>0<><>::uid://di1tbhqtkq0rd::::res://Scripts/ladder.gd<>uid://bxyvlsbjohnl::::res://Scenes/Levels/Assets/ladder.png
+testlevel.tscn::PackedScene::6275530535245818215::1777145641::0::1::::<><><>0<>0<><>::uid://cjixhxy705nie::::res://Scenes/Units/Player/player.tscn<>uid://deqivay682r3u::::res://Scenes/Levels/tile_map_layer.tscn<>uid://unqe86xd0jyh::::res://Scenes/Objects/Letter/letter.tscn<>uid://cc1uqkbswahoj::::res://Scenes/Units/Angel/angel.tscn
+tile_map_layer.tscn::PackedScene::7473570745839508696::1784460113::0::1::::<><><>0<>0<><>::uid://1821yef35w5h::::res://Scenes/Levels/Assets/wall — копия (2).png<>uid://rp8ibtwtiwwj::::res://Scenes/Levels/Assets/floor.png<>uid://dy7elwb3m1o8d::::res://Scenes/Levels/Assets/floorw.png<>uid://bsbucyvtheqg6::::res://Scenes/Levels/Assets/divan.png<>uid://b8pqxxtxkpqym::::res://Scenes/Levels/Assets/privalok.png
+wall — копия (2).png::CompressedTexture2D::5226847376972353699::1784458192::1784458183::1::::<><><>0<>0<>93f060b4c8b2bc73c58085208c343e98<>res://.godot/imported/wall — копия (2).png-c80e6f64f26434581ac14a7f2e1f8fda.ctex::
+::res://Scenes/Levels/Assets/::1784458273
+divan.png::CompressedTexture2D::3653103452248982363::1774974564::1774362255::1::::<><><>0<>0<>c276d694b48f0949c49b807885cd22b4<>res://.godot/imported/divan.png-7bdede95d8706a2eb661d45ece416d80.ctex::
+floor.png::CompressedTexture2D::1226194038169924029::1774974548::1774361912::1::::<><><>0<>0<>c2b30022bd82a856b0b5f19cb2089d47<>res://.godot/imported/floor.png-6b0fbea256e4a2fc2c77400f8a48bd6b.ctex::
+floorw.png::CompressedTexture2D::8910118056573787629::1774974548::1774361917::1::::<><><>0<>0<>47814dbfdb2b12dcc9f7e84736e3c050<>res://.godot/imported/floorw.png-c25a5beccb23048b22cdb9c5e055bf80.ctex::
+ladder.png::CompressedTexture2D::119164847101157505::1776786297::1776786298::1::::<><><>0<>0<>6090839afbae398c5441f2dc6f720f45<>res://.godot/imported/ladder.png-e6a6d5cbd24c5cb05f2da53a229979d9.ctex::
+pic.png::CompressedTexture2D::5205659856406729501::1774365336::1774365336::1::::<><><>0<>0<>24b5bfad72dcde93a3da7a4885dcdaef<>res://.godot/imported/pic.png-bc0b556aa6c3b6baad0043d2803b39a7.ctex::
+privalok.png::CompressedTexture2D::4734631973650466612::1774366478::1774366478::1::::<><><>0<>0<>e472a61c6476b9709a8afb6690eef9a2<>res://.godot/imported/privalok.png-54ad90bb43f7cf33b3c50bbff46051af.ctex::
+wall — копия (2).png::CompressedTexture2D::1894721456924457643::1784458273::1784458273::1::::<><><>0<>0<>a0518d6913958b26412bf4890424aae7<>res://.godot/imported/wall — копия (2).png-b9e2f2f215f4bd063416e5b50d8a6dbe.ctex::
+wall.png::CompressedTexture2D::2924003579167341505::1774974548::1774361921::1::::<><><>0<>0<>1c55a432886fbaa13a8ea890fa51a171<>res://.godot/imported/wall.png-b09e7e6c03d73a0b8cb42e840f270a7f.ctex::
+::res://Scenes/Levels/Level0/::1784643065
+angels.gd::GDScript::7115906432529404471::1777142408::0::1::::<>Node2D<><>0<>0<><>::
+level_0.tscn::PackedScene::8694356180292173864::1784643065::0::1::::<><><>0<>0<><>::uid://deqivay682r3u::::res://Scenes/Levels/tile_map_layer.tscn<>uid://dnbat3iqk2sqa::::res://Scenes/Objects/Door/door.tscn<>uid://unqe86xd0jyh::::res://Scenes/Objects/Letter/letter.tscn<>uid://cjixhxy705nie::::res://Scenes/Units/Player/player.tscn<>uid://dfp4xjaddjxtd::::res://Assets/Sprites/Angels/angel 4.png<>uid://c210gaqmcl5vr::::res://Scenes/Objects/Interior/interior.tscn<>uid://gu30cgksulim::::res://Scenes/Objects/Pic/pic.tscn<>uid://bbi4x5mu83llt::::res://Scenes/Objects/Interior/angel 6.png<>uid://crwna8wit2th7::::res://Scenes/Objects/Interior/light.tscn<>uid://dv80il0mvashp::::res://Scenes/Objects/Interior/point_light.tscn<>uid://bxinqjjdsryb0::::res://Scenes/Objects/Interior/angel 5.png<>uid://cc1uqkbswahoj::::res://Scenes/Units/Angel/angel.tscn<>uid://c8m8663efg4nj::::res://Scenes/Levels/Level0/angels.gd<>uid://deno8addogms::::res://Scenes/Levels/ladder.tscn<>uid://c7ul5d1jkqvrh::::res://Audio/ong_howlireaky_and_distant_28337.mp3<>uid://3t1heirgrga3::::res://Audio/zvuk-zhuzhzhanie-muhi.mp3
+::res://Scenes/Levels/Level1/::1784641370
+angel_group_1.gd::GDScript::2024025862662796970::1778067639::0::1::::<>Node2D<><>0<>0<><>::
+angel_group_2.gd::GDScript::7585741594076538361::1777667875::0::1::::<>Node2D<><>0<>0<><>::
+angel_group_3.gd::GDScript::1527589469718187565::1778066979::0::1::::<>Node2D<><>0<>0<><>::
+angel_group_4.gd::GDScript::978666793517424144::1778067576::0::1::::<>Node2D<><>0<>0<><>::
+ladder.gd::GDScript::7516541133576113596::1784640480::0::1::::<>Node2D<><>0<>0<><>::
+level_1.tscn::PackedScene::5537578335862370621::1784641370::0::1::::<><><>0<>0<><>::uid://deqivay682r3u::::res://Scenes/Levels/tile_map_layer.tscn<>uid://deno8addogms::::res://Scenes/Levels/ladder.tscn<>uid://dnbat3iqk2sqa::::res://Scenes/Objects/Door/door.tscn<>uid://cjixhxy705nie::::res://Scenes/Units/Player/player.tscn<>uid://dv80il0mvashp::::res://Scenes/Objects/Interior/point_light.tscn<>uid://dfdclmo6hq7oq::::res://Scenes/Levels/Level1/ladder.gd<>uid://gu30cgksulim::::res://Scenes/Objects/Pic/pic.tscn<>uid://cc1uqkbswahoj::::res://Scenes/Units/Angel/angel.tscn<>uid://33pn7iicecko::::res://Scenes/Levels/Level1/angel_group_1.gd<>uid://dgcub5p0cog8p::::res://Scenes/Levels/Level1/angel_group_2.gd<>uid://v08f70ie10wn::::res://Scenes/Levels/Level1/angel_group_3.gd<>uid://n7cq7717bix1::::res://Scenes/Levels/Level1/angel_group_4.gd
+::res://Scenes/Levels/Level2/::1784640333
+level_2.tscn::PackedScene::5312601133557531323::1784640333::0::1::::<><><>0<>0<><>::uid://deqivay682r3u::::res://Scenes/Levels/tile_map_layer.tscn<>uid://cjixhxy705nie::::res://Scenes/Units/Player/player.tscn<>uid://deno8addogms::::res://Scenes/Levels/ladder.tscn
+::res://Scenes/Levels/Level3/::1784644759
+level_3.tscn::PackedScene::9186222992315636453::1784640493::0::1::::<><><>0<>0<><>::uid://deqivay682r3u::::res://Scenes/Levels/tile_map_layer.tscn
+photo_2026-07-21_17-38-23.jpg::CompressedTexture2D::5276880831601237857::1784644759::1784644760::1::::<><><>0<>0<>3721074b7eed03405c7df54b8064c118<>res://.godot/imported/photo_2026-07-21_17-38-23.jpg-0c9ba102fbd92ea27e532cc2dc0d41c6.ctex::
+::res://Scenes/Levels/Level4/::1771007116
+::res://Scenes/Levels/Level5/::1771007124
+::res://Scenes/Objects/::1774373152
+::res://Scenes/Objects/Door/::1776792545
+door.tscn::PackedScene::8073816809965629024::1776792545::0::1::::<><><>0<>0<><>::uid://j7b0r3xyurft::::res://Scripts/door.gd<>uid://tq3ccq4vlfn3::::res://Assets/Sprites/Doors/Door.png<>uid://guyxt7q68nle::::res://Assets/Sprites/Doors/progressbar0.png<>uid://ct68rk8f0u1ea::::res://Assets/Sprites/Doors/progressbar1.png<>uid://wuwvj5d0ytle::::res://Audio/zvuki-dlya-montazha-avariya-bolshoe-bokovoe-stolknovenie.mp3
+::res://Scenes/Objects/Interior/::1778100324
+angel 5.png::CompressedTexture2D::4018097489783213795::1776779670::1776779671::1::::<><><>0<>0<>bb132871d5acace79dee92c508a65ead<>res://.godot/imported/angel 5.png-d59fd2cc3ae574730b310f8590b01758.ctex::
+angel 6.png::CompressedTexture2D::2474928010605730213::1776781792::1776781792::1::::<><><>0<>0<>a965c4126a1ea8e0719fd8f6d8622541<>res://.godot/imported/angel 6.png-cb863b5db1c964798352defa3ca9a12b.ctex::
+candlestick.png::CompressedTexture2D::5758359880609382978::1775038042::1775035712::1::::<><><>0<>0<>52c58973370666dc541a6cbc8b090456<>res://.godot/imported/candlestick.png-fa4270d54694e1eefa4c60a201e5b93a.ctex::
+closet.png::CompressedTexture2D::5648888649296237450::1775039561::1775039561::1::::<><><>0<>0<>b8fe15cd10bb9b38784f02d72265e334<>res://.godot/imported/closet.png-78b8c5cc93a7c6d5cea9a0334bfca5c6.ctex::
+cross.png::CompressedTexture2D::1294359760612481486::1776779405::1776779405::1::::<><><>0<>0<>37a769277d17f90859fbc3d45e12433d<>res://.godot/imported/cross.png-0f79f184af3d9bcfb1788e3bf552dbb4.ctex::
+interior.png::CompressedTexture2D::2051722790961349722::1774373175::1774373175::1::::<><><>0<>0<>87c8ee2d837392f2742391455fa291d1<>res://.godot/imported/interior.png-5f67699a528cc858d2fbe71114ad36e7.ctex::
+interior.tscn::PackedScene::6723142632066457803::1778086504::0::1::::<><><>0<>0<><>::uid://4h4tsiluicso::::res://Scenes/Objects/Interior/interior.png<>uid://cmqmmutuqgsvi::::res://Scenes/Objects/Interior/closet.png<>uid://cvxeylicst12q::::res://Scenes/Objects/Interior/table.png<>uid://so86fck3o5ok::::res://Scenes/Objects/Interior/cross.png<>uid://bptovy6e1ikt::::res://Scenes/Objects/Interior/table2.png<>uid://bf5o2rxrs4syx::::res://Scenes/Objects/Interior/look at me.png
+light.gd::GDScript::4736129645650391213::1775042985::0::1::::<>PointLight2D<><>0<>0<><>::
+light.png::CompressedTexture2D::8600104988343573586::1775040216::1775040216::1::::<><><>0<>0<>b7a4fc71f5048313bddf815f4526d2a1<>res://.godot/imported/light.png-131315e6fb2e8c96c7c7975b5fe9134e.ctex::
+light.tscn::PackedScene::6012259108374240866::1775042985::0::1::::<><><>0<>0<><>::uid://dur7qcnx4rgb7::::res://Scenes/Objects/Interior/light.png<>uid://b8qhml8n1gck8::::res://Scenes/Objects/Interior/light.gd
+look at me.png::CompressedTexture2D::2800195418064290679::1778086446::1778086446::1::::<><><>0<>0<>7b1c8df7382d9bb5a0f8919801676e11<>res://.godot/imported/look at me.png-450ca6cc5b19f96bb48bb01ec000912f.ctex::
+png-klev-club-3kzf-p-razmitii-krug-png-24.png::CompressedTexture2D::1765444782896775315::1778097143::1778097144::1::::<><><>0<>0<>ddba22b4291e39c30bef61ee62d17887<>res://.godot/imported/png-klev-club-3kzf-p-razmitii-krug-png-24.png-ac32e066c816a99e8343c5af71e38839.ctex::
+point_light.gd::GDScript::8007481089236496370::1775043383::0::1::::<>PointLight2D<><>0<>0<><>::
+point_light.tscn::PackedScene::8702885061482627797::1778100324::0::1::::<><><>0<>0<><>::uid://cobnl05kluur7::::res://Scenes/Objects/Interior/candlestick.png<>uid://dmc5bqo6e2pb3::::res://Scenes/Objects/Interior/point_light.gd
+table2.png::CompressedTexture2D::102334275406694391::1776766650::1776766650::1::::<><><>0<>0<>78b8f3bbcec4f7a7e03468971ccb9a8e<>res://.godot/imported/table2.png-286be631875e22583629f0f55da950a5.ctex::
+table.png::CompressedTexture2D::6294574089384029958::1776765816::1776765817::1::::<><><>0<>0<>dcd13b33e78ea8dbf9078952559dbc84<>res://.godot/imported/table.png-251cee6aaee26620414890f08285cf88.ctex::
+::res://Scenes/Objects/Letter/::1775033787
+letter.tscn::PackedScene::1431594180832817011::1775033787::0::1::::<><><>0<>0<><>::uid://3w30nb4w7es6::::res://Assets/Sprites/Letters/letter.png<>uid://ce0lfryokrpqx::::res://Scripts/letter.gd
+::res://Scenes/Objects/Pic/::1774372585
+pic.tscn::PackedScene::464165452349207368::1774365654::0::1::::<><><>0<>0<><>::uid://ce0lfryokrpqx::::res://Scripts/letter.gd<>uid://cgfwpsu434uaf::::res://Scenes/Levels/Assets/pic.png
+::res://Scenes/UI/::1784644167
+dead.gd::GDScript::8195300140610291222::1784644167::0::1::::<>Control<><>0<>0<><>::
+Dead.tscn::PackedScene::6981938942231405151::1784642640::0::1::::<><><>0<>0<><>::uid://do04np0dv8rry::::res://Scenes/UI/dead.gd
+main_menu.gd::GDScript::6698294364383952973::1776785115::0::1::::<>Control<><>0<>0<><>::
+main_menu.tscn::PackedScene::8701369252381967755::1776785421::0::1::::<><><>0<>0<><>::uid://c2ox6us76nfc4::::res://Scripts/main_menu.gd
+pause.tscn::PackedScene::8172460662144991365::1772911848::0::1::::<><><>0<>0<><>::uid://d0jpg26iun3cx::::res://Scripts/pause.gd
+options.tscn::PackedScene::8442940815518734075::1784643881::0::1::::<><><>0<>0<><>::uid://dwq8cdk3uxtov::::res://Scenes/UI/options.gd
+options.gd::GDScript::8738454061848014773::1784643953::0::1::::<>Control<><>0<>0<><>::
+::res://Scenes/Units/::1771703057
+::res://Scenes/Units/Angel/::1784467528
+angel.tscn::PackedScene::4968136316451180129::1784467528::0::1::::<><><>0<>0<><>::uid://b7m6cri1da3f2::::res://Assets/Sprites/Angels/angel 2.png<>uid://cg74omy7jn35o::::res://Scripts/angel.gd<>uid://d17id7d56a25o::::res://Scenes/Units/Angel/png-klev-club-3kzf-p-razmitii-krug-png-24 — копия.png<>uid://dfp4xjaddjxtd::::res://Assets/Sprites/Angels/angel 4.png<>uid://chsxg0t22qiid::::res://Assets/Sprites/Angels/angel 1.png<>uid://bb5k5qpt5btg2::::res://Assets/Sprites/Angels/angel 3.png<>uid://bedav3ews2y4q::::res://Audio/angel_sound/759c43283530da3.mp3<>uid://q3jvqlij7nx0::::res://Audio/stuk-serdca-_-strannyy-on-takoy-eto-zvuk_-vot-tak-ono-stuchitsya.mp3<>uid://mgttbyonsp06::::res://Audio/angel_sound/59018dacd1c65c3.mp3<>uid://dxfsy6ugv4eow::::res://Audio/angel_sound/dementor.mp3<>uid://3x55nllogiub::::res://Audio/angel_sound/fb239dbda41f910.mp3<>uid://cxqvgmnycs0o3::::res://Audio/angel_sound/kamni-zvuki.mp3
+png-klev-club-3kzf-p-razmitii-krug-png-24 — копия.png::CompressedTexture2D::9050724853908043622::1784467166::1784467167::1::::<><><>0<>0<>26e87b319a407f88e7a4280b2764528c<>res://.godot/imported/png-klev-club-3kzf-p-razmitii-krug-png-24 — копия.png-f05b790ecac31a9da72630ec956b49a0.ctex::
+png-klev-club-3kzf-p-razmitii-krug-png-24.png::CompressedTexture2D::8765449604488025461::1784466798::1784466798::1::::<><><>0<>0<>1132229ceaed01efb6bed98b1cc49543<>res://.godot/imported/png-klev-club-3kzf-p-razmitii-krug-png-24.png-57ebcdb442ba5180d44bd2ecfe9540df.ctex::
+png-klev-club-laaa-p-razmitii-krug-belii-png-1.png::CompressedTexture2D::2987101489791933641::1778097422::1778097422::1::::<><><>0<>0<>8743bc657385add1345ff2d8fd021c97<>res://.godot/imported/png-klev-club-laaa-p-razmitii-krug-belii-png-1.png-f6649b261f03b6faca4e0eab70b1e551.ctex::
+::res://Scenes/Units/Player/::1784464532
+player.tscn::PackedScene::5422466220152830408::1784464532::0::1::::<><><>0<>0<><>::uid://ccn4bvpklc1b3::::res://Assets/Sprites/Player/Idle.png<>uid://bfe3lvvjbds77::::res://Scripts/player.gd<>uid://bup8rwbwhjx18::::res://Assets/Sprites/Player/Без имени.png<>uid://s8afyya6wr6w::::res://Assets/Sprites/Player/png-klev-club-laaa-p-razmitii-krug-belii-png-1.png<>uid://6mfkhyk3lv8n::::res://Assets/Sprites/Player/BatteryBar.png<>uid://doo2h6psapsnl::::res://Scenes/UI/pause.tscn<>uid://buvn0ag5vq0ot::::res://Assets/Sprites/Player/BatteryBar2.png<>uid://c6qdrqshvjlyl::::res://Scenes/UI/Dead.tscn
+::res://Scripts/::1784467857
+angel.gd::GDScript::5261820980071217906::1784467857::0::1::::<>CharacterBody2D<><>0<>0<><>::
+door.gd::GDScript::697865979941961985::1776791991::0::1::::<>Node2D<><>0<>0<><>::
+Global.gd::GDScript::6391289327118914311::1771076732::0::1::::<>Node<><>0<>0<><>::
+ladder.gd::GDScript::7775602423703200553::1778082118::0::1::::<>Node2D<><>0<>0<><>::
+letter.gd::GDScript::5105883932302185435::1771442457::0::1::::<>Node2D<><>0<>0<><>::
+main_menu.gd::GDScript::6698294364383952973::1776785421::0::1::::<>Control<><>0<>0<><>::
+pause.gd::GDScript::8933485477881721395::1772912169::0::1::::<>Control<><>0<>0<><>::
+player.gd::GDScript::2747343268271557680::1778081202::0::1::::<>CharacterBody2D<><>0<>0<><>::
