@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://crwna8wit2th7"]
+
+[ext_resource type="Texture2D" uid="uid://dur7qcnx4rgb7" path="res://Scenes/Objects/Interior/light.png" id="1_gmg0u"]
+[ext_resource type="Script" uid="uid://b8qhml8n1gck8" path="res://Scenes/Objects/Interior/light.gd" id="2_kuuhu"]
+
+[node name="Light" type="PointLight2D" unique_id=557060131]
+color = Color(0.4265909, 0.55642927, 0.64784825, 1)
+texture = ExtResource("1_gmg0u")
+script = ExtResource("2_kuuhu")
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=2046430523]

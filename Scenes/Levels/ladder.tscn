@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://deno8addogms"]
+
+[ext_resource type="Script" uid="uid://di1tbhqtkq0rd" path="res://Scripts/ladder.gd" id="1_xlsv4"]
+[ext_resource type="Texture2D" uid="uid://bxyvlsbjohnl" path="res://Scenes/Levels/Assets/ladder.png" id="2_wsm82"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_glk3n"]
+size = Vector2(545, 677)
+
+[node name="Ladder" type="Node2D" unique_id=238760546]
+script = ExtResource("1_xlsv4")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=615234151]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1653446266]
+position = Vector2(3.5, 5.5)
+shape = SubResource("RectangleShape2D_glk3n")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1054742916]
+texture = ExtResource("2_wsm82")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

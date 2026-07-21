@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://dsj3ab76d62w2"]
+
+[ext_resource type="Script" uid="uid://dwq8cdk3uxtov" path="res://Scenes/UI/options.gd" id="1_sncl2"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_g4v7s"]
+
+[node name="Options" type="Control" unique_id=1137009550]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_sncl2")
+
+[node name="BoxContainer" type="BoxContainer" parent="." unique_id=28160263]
+layout_mode = 1
+anchors_preset = 13
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -31.0
+offset_right = 31.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BoxContainer" unique_id=979197861]
+layout_mode = 2
+
+[node name="LabelOptions" type="Label" parent="BoxContainer/VBoxContainer" unique_id=1689898901]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_font_sizes/font_size = 72
+text = "Options"
+label_settings = SubResource("LabelSettings_g4v7s")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Darkness" type="HBoxContainer" parent="BoxContainer/VBoxContainer" unique_id=1076366677]
+layout_mode = 2
+
+[node name="textShadow" type="Label" parent="BoxContainer/VBoxContainer/Darkness" unique_id=819254475]
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "Darkness "
+
+[node name="OptionButton" type="OptionButton" parent="BoxContainer/VBoxContainer/Darkness" unique_id=1864023500]
+layout_mode = 2
+selected = 0
+item_count = 2
+popup/item_0/text = "on"
+popup/item_0/id = 0
+popup/item_1/text = "off"
+popup/item_1/id = 1
+
+[node name="Back" type="Button" parent="BoxContainer/VBoxContainer" unique_id=1809194623]
+layout_mode = 2
+text = "Back"
+
+[connection signal="pressed" from="BoxContainer/VBoxContainer/Back" to="." method="_on_back_button_pressed"]

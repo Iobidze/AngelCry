@@ -1,0 +1,95 @@
+[gd_scene format=3 uid="uid://cc1uqkbswahoj"]
+
+[ext_resource type="Texture2D" uid="uid://b7m6cri1da3f2" path="res://Assets/Sprites/Angels/angel 2.png" id="1_73cpf"]
+[ext_resource type="Script" uid="uid://cg74omy7jn35o" path="res://Scripts/angel.gd" id="1_sl4ne"]
+[ext_resource type="Texture2D" uid="uid://d17id7d56a25o" path="res://Scenes/Units/Angel/png-klev-club-3kzf-p-razmitii-krug-png-24 — копия.png" id="2_6rea2"]
+[ext_resource type="Texture2D" uid="uid://dfp4xjaddjxtd" path="res://Assets/Sprites/Angels/angel 4.png" id="2_aoyje"]
+[ext_resource type="Texture2D" uid="uid://chsxg0t22qiid" path="res://Assets/Sprites/Angels/angel 1.png" id="2_sl4ne"]
+[ext_resource type="Texture2D" uid="uid://bb5k5qpt5btg2" path="res://Assets/Sprites/Angels/angel 3.png" id="3_aoyje"]
+[ext_resource type="AudioStream" uid="uid://bedav3ews2y4q" path="res://Audio/angel_sound/759c43283530da3.mp3" id="6_f8vit"]
+[ext_resource type="AudioStream" uid="uid://q3jvqlij7nx0" path="res://Audio/stuk-serdca-_-strannyy-on-takoy-eto-zvuk_-vot-tak-ono-stuchitsya.mp3" id="6_vwbrn"]
+[ext_resource type="AudioStream" uid="uid://mgttbyonsp06" path="res://Audio/angel_sound/59018dacd1c65c3.mp3" id="7_vwbrn"]
+[ext_resource type="AudioStream" uid="uid://dxfsy6ugv4eow" path="res://Audio/angel_sound/dementor.mp3" id="8_6rea2"]
+[ext_resource type="AudioStream" uid="uid://3x55nllogiub" path="res://Audio/angel_sound/fb239dbda41f910.mp3" id="9_n5vja"]
+[ext_resource type="AudioStream" uid="uid://cxqvgmnycs0o3" path="res://Audio/angel_sound/kamni-zvuki.mp3" id="10_en8e8"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kkb67"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_aoyje")
+}],
+"loop": 1,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 0.3,
+"texture": ExtResource("1_73cpf")
+}, {
+"duration": 0.3,
+"texture": ExtResource("2_sl4ne")
+}, {
+"duration": 0.3,
+"texture": ExtResource("3_aoyje")
+}],
+"loop": 1,
+"name": &"Walk",
+"speed": 5.0
+}]
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_ouppf"]
+polygon = PackedVector2Array(-66, 63, -53, 68, -43, 73, -29, 77, -18, 79, -4, 81, 8, 83, 23, 83, 35, 79, 47, 71, 58, 67, 67, 61, 75, 56, 81, 47, 85, 38, 88, 30, 86, 23, 79, 18, 69, 15, 57, 15, 44, 23, 33, 33, 22, 40, 13, 47, -4, 49, -16, 45, -31, 36, -41, 32, -57, 27, -75, 31, -81, 42, -77, 54)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_sl4ne"]
+radius = 78.025635
+
+[sub_resource type="AudioStreamRandomizer" id="AudioStreamRandomizer_f8vit"]
+streams_count = 5
+stream_0/stream = ExtResource("6_f8vit")
+stream_1/stream = ExtResource("7_vwbrn")
+stream_2/stream = ExtResource("8_6rea2")
+stream_3/stream = ExtResource("9_n5vja")
+stream_4/stream = ExtResource("10_en8e8")
+
+[node name="Angel" type="CharacterBody2D" unique_id=210951810]
+scale = Vector2(0.75, 0.75)
+script = ExtResource("1_sl4ne")
+
+[node name="Step_light" type="PointLight2D" parent="." unique_id=730005809]
+position = Vector2(15.999999, -54.666668)
+scale = Vector2(0.01458333, 0.014491534)
+energy = 0.7
+texture = ExtResource("2_6rea2")
+texture_scale = 3.0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1961926582]
+sprite_frames = SubResource("SpriteFrames_kkb67")
+animation = &"Idle"
+
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="." unique_id=1434164422]
+rect = Rect2(-129, -195, 268, 332)
+enable_node_path = NodePath(".")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=139790631]
+
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=668887527]
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="." unique_id=1486297460]
+position = Vector2(8, -36)
+occluder = SubResource("OccluderPolygon2D_ouppf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=834572679]
+position = Vector2(1.3333334, -36)
+shape = SubResource("CircleShape2D_sl4ne")
+
+[node name="Hearth" type="AudioStreamPlayer2D" parent="." unique_id=808174462]
+stream = ExtResource("6_vwbrn")
+autoplay = true
+max_distance = 700.0
+
+[node name="AngelSound" type="AudioStreamPlayer2D" parent="." unique_id=2077831777]
+stream = SubResource("AudioStreamRandomizer_f8vit")
+volume_db = -5.0
+autoplay = true
+max_distance = 2115.0
